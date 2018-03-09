@@ -32,6 +32,9 @@ input {
 				Create your personal account<br /> <span style="font-size: 11pt;">회원가입시
 					모든 요소는 필수기입 항목입니다.</span>
 			</div>
+			<c:if test='${res!=null }'>
+				<div style="color:red">회원가입에 실패하였습니다.</div>
+			</c:if>
 			<div>
 				<form action="/join" method="post"
 					style="width: 330px; text-align: left;" autocomplete="off">
@@ -40,7 +43,7 @@ input {
 							type="text" name="id" id="id" pattern="[a-zA-Z]+">
 					</div>
 					<div style="margin-top: 20px;">
-						<b>PASS(*)</b><br /> <input type="password" name="pass">
+						<b>PASS(*)</b><br /> <input type="password" name="pw">
 					</div>
 					<div style="margin-top: 20px;">
 						<b>EMAIL(*)</b><br /> <input type="email" name="email">

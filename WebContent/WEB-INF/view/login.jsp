@@ -24,7 +24,7 @@ input {
 			</div>
 			<hr />
 			<div align="right" style="padding-right: 20px;">
-				<a href="/login"><span style="font-weight: bold">Sign in</span></a> <span>or</span> <span>Sign up</span>
+				<span style="font-weight: bold">Sign in</span> <span>or</span> <a href="/join"><span>Sign up</span></a>
 			</div>
 			<hr />
 			<div>

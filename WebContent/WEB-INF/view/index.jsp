@@ -18,6 +18,9 @@
 				<h1>Spring Project</h1>
 				<small>- ${ment } -</small>
 			</div>
+			<c:if test='${logon!=null }'>
+				<div align="left">${logon }님 환영합니다.</div>
+			</c:if>
 			<hr/>
 			<div align="right" style="padding-right: 20px;">
 				<a href="/login"><span>Sign in</span></a> <span>or</span> 
